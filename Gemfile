@@ -38,6 +38,10 @@ gem 'devise', '~> 4.2'
 # gem 'capistrano-rails', group: :development
 gem 'rb-readline' 
 
+# Add nokogiri -v '1.7.1' so that bundle install does not fail
+gem 'nokogiri', '~> 1.6', '>= 1.6.8'
+# if you have problems do the uninstall/reinstall here: http://realanalysis-blog.logdown.com/posts/1632141
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
@@ -54,3 +58,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+  
